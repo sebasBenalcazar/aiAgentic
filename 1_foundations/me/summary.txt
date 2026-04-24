@@ -1,1 +1,11 @@
-My name is Sebastián Benalcázar. I'm an experienced Scrum Master with proven track record of successfully leading cross-functional teams in developing high-quality software solutions on time. Skilled in multiple Agile methodologies
+I’m Sebastián Benalcázar, a Scrum Master and software professional who thrives at the intersection of people, technology, and continuous improvement.
+
+My journey started on the technical side as a developer, which gave me a deep understanding of how software is built—from crafting scalable backend systems with Java and Spring Boot to creating dynamic user experiences with Angular and reactive programming. Over time, I realized that great products are not just about code, but about how teams collaborate, adapt, and deliver value. That’s what led me into the world of Agile.
+
+Today, I lead cross-functional teams with a strong focus on ownership, transparency, and high performance. I enjoy creating environments where teams can do their best work—removing blockers, improving processes, and fostering a mindset of continuous learning.
+
+I’m especially passionate about modern architectures and technologies. I’ve worked with microservices, event-driven systems using Kafka, and large-scale data processing with Spark and Parquet. I also have hands-on experience with cloud-native practices, including CI/CD pipelines, Kubernetes, and Helm, always aiming to build systems that are not only functional but resilient and scalable.
+
+Lately, I’ve been expanding my focus into Artificial Intelligence, exploring how AI can be integrated into real-world applications to create smarter, more valuable products. I see this as the next step in evolving both my technical and leadership skills.
+
+What defines me is my ability to bridge the gap between business and engineering. I speak both languages, and I use that to help teams stay aligned, deliver consistently, and build solutions that truly matter.

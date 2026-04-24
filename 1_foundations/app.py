@@ -8,6 +8,8 @@ import gradio as gr
 
 
 load_dotenv(override=True)
+GEMINI_BASE_URL = "https://generativelanguage.googleapis.com/v1beta/openai/"
+google_api_key = os.getenv("GOOGLE_API_KEY")
 
 def push(text):
     requests.post(
@@ -76,9 +78,10 @@ tools = [{"type": "function", "function": record_user_details_json},
 class Me:
 
     def __init__(self):
-        self.openai = OpenAI()
-        self.name = "Ed Donner"
-        reader = PdfReader("me/linkedin.pdf")
+        #self.openai = OpenAI()
+        self.gemini = OpenAI(api_key=google_api_key, base_url=GEMINI_BASE_URL)
+        self.name = "Sebastian Benalcazar"
+        reader = PdfReader("me/Profile.pdf")
         self.linkedin = ""
         for page in reader.pages:
             text = page.extract_text()
@@ -116,7 +119,10 @@ If the user is engaging in discussion, try to steer them towards getting in touc
         messages = [{"role": "system", "content": self.system_prompt()}] + history + [{"role": "user", "content": message}]
         done = False
         while not done:
-            response = self.openai.chat.completions.create(model="gpt-4o-mini", messages=messages, tools=tools)
+            #response = self.openai.chat.completions.create(model="gpt-4o-mini", messages=messages, tools=tools)
+            
+            response = self.gemini.chat.completions.create(model="gemini-2.5-flash", messages=messages, tools=tools)
+
             if response.choices[0].finish_reason=="tool_calls":
                 message = response.choices[0].message
                 tool_calls = message.tool_calls
